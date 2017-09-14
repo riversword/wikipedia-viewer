@@ -17,16 +17,22 @@ $(document).ready(function(){
     }
   });
 	$("input[name='search']").click(function(){
-	  $("div.logo").slideUp("slow");
-    $(".logo img").slideUp("slow");
-	  var getUrl='https://en.wikipedia.org/w/api.php?action=query&origin=*&generator=search&gsrsearch='+$(".search input[name='searchBox']").val() +'&format=json&gsrnamespace=0&prop=pageimages|extracts&exintro=true&pilimit=10&pithumbsize=100&exsentences=2'; 
+    var sContent=$(".search input[name='searchBox']").val();
+    sContent=sContent.replace(/^\s+/g,'');
+    //console.log("内容是："+sContent+"测试");
+    if(sContent != ''){
+      $("div.logo").slideUp("slow");
+      $(".logo img").slideUp("slow");
+    };
+	  
+	  var getUrl='https://en.wikipedia.org/w/api.php?action=query&origin=*&generator=search&gsrsearch='+sContent+'&format=json&gsrnamespace=0&prop=pageimages|extracts&exintro=true&pilimit=10&pithumbsize=100&exsentences=2'; 
   
     $.ajax({
   	url:getUrl,
   	type:"get",
   	success:function(data){
-  		console.log(data);
-  		console.log(data.query.pages);
+  		// console.log(data);
+  		// console.log(data.query.pages);
   		var pages=data.query.pages;
       //清空页面
   		$("#content").empty();

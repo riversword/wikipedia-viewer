@@ -1,0 +1,109 @@
+body{
+	margin:0px;
+	padding:0px;
+}
+
+.logo {
+	text-align: center;
+	margin:30px auto;
+	height:250px;
+	width:250px;
+    border-radius: 50%;
+	box-shadow: -40px 40px 30px #000000;
+}
+.logo img{
+	width:250px;
+    vertical-align: bottom;
+}
+.search{
+	width:700px;
+	margin:30px auto;
+	margin-bottom: 0px;
+	
+}
+.search input[name="random"]{
+	height:50px;
+	margin-right: 10px;
+	margin-left: 20px;
+	background-color: rgba(27,37,47,0.6);
+	color:rgba(255,255,255,1);
+	font-size: 18px;
+	border: 2px white solid;
+	border-radius: 10px;
+	box-shadow: -10px 10px 10px #000000;
+	outline:none;
+}
+.search input[name="random"]:hover{
+	background-color: rgba(250,150,50,0.6);
+}
+.search input[name="search"]:hover{
+	background-color: rgba(250,150,50,0.6);
+}
+.search .searchButton{
+	width:50px;
+	height:50px;
+	margin-left: 10px;
+	background-color: rgba(27,37,47,0.6);
+	color:rgba(255,255,255,1);
+	font-size: 20px;
+	border: 2px white solid;
+	border-radius: 50%;
+	box-shadow: -10px 10px 10px #000000;
+	outline:none;
+}
+.search .buttonDown{
+    width:40px;
+	height:40px;
+	margin-left: 15px;
+	background-color: rgba(27,37,47,0.6);
+	color:rgba(255,255,255,1);
+	font-size: 20px;
+	border: 2px white solid;
+	border-radius: 50%;
+	box-shadow: -5px 5px 5px #000000;
+	outline:none;
+}
+.search input[name="searchBox"]{
+	width:500px;
+	height:40px;
+	outline:none;
+	font-size: 20px;
+	padding-left: 10px;
+	border: 2px rgba(37,47,57,0.8) solid;
+	border-radius:5px;
+	box-shadow: -10px 10px 10px #000000;
+}
+#content{
+	width:800px;
+	margin:50px auto;
+}
+
+#content div{
+	width:600px;
+	border-radius: 10px;
+	border: 2px rgba(17,27,37,0.4) solid;
+	margin: 5px auto;
+	padding-left:20px;
+	padding-right:20px;
+	padding-bottom: 20px;
+	overflow: hidden;/*清除图片溢出*/
+}
+#content div img{
+	float:left;
+	margin-right: 20px;
+	/*margin-bottom: 20px;*/
+}
+#content .on{
+     font-size:120%;
+     height:120%;
+     width:720px;
+     margin: 5px auto;
+     padding-left:20px;
+	 padding-right:20px;
+     background-color: rgba(100,150,50,0.6);
+     border: 4px rgba(200,0,0,0.4) solid;
+     box-shadow: -10px 10px 10px #000000;
+}
+a:link {color:#000000;text-decoration:none;}
+a:visited {color:#55aa00;text-decoration:none;}
+a:hover {color:#0000ff;text-decoration:underline;}

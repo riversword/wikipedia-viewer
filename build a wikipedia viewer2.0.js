@@ -43,15 +43,7 @@ $(document).ready(function(){
           $('#content').append("<div class='resultItem'><h3><a href='http://en.wikipedia.org/wiki?curid="+pages[i].pageid+"' target='_blank'>"+pages[i].title+"</a></h3>"+"<img src='"+pages[i].thumbnail.source+ "'>"+pages[i].extract+"</div>");
         }else $('#content').append("<div class='resultItem'><h3><a href='http://en.wikipedia.org/wiki?curid="+pages[i].pageid+"' target='_blank'>"+pages[i].title+"</a></h3>"+pages[i].extract+"</div>");
   		}
-  		  $("#content div").hover(
-   			 function(){
-      			  $(this).addClass('on');
-    		 },
-    		 function(){
-    			  $(this).removeClass('on');
-   		     }
-		    );
-     
+  		  
   	}
     });
 

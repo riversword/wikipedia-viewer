@@ -31,7 +31,7 @@ body{
 	border: 2px white solid;
 	border-radius: 10px;
 	box-shadow: -10px 10px 10px #000000;
-	outline:none;
+	outline:medium;
 }
 .search input[name="random"]:hover{
 	background-color: rgba(250,150,50,0.6);
@@ -49,7 +49,7 @@ body{
 	border: 2px white solid;
 	border-radius: 50%;
 	box-shadow: -10px 10px 10px #000000;
-	outline:none;
+	outline:medium;
 }
 .search .buttonDown{
     width:40px;
@@ -61,12 +61,12 @@ body{
 	border: 2px white solid;
 	border-radius: 50%;
 	box-shadow: -5px 5px 5px #000000;
-	outline:none;
+	outline:medium;
 }
 .search input[name="searchBox"]{
 	width:500px;
 	height:40px;
-	outline:none;
+	outline:medium;
 	font-size: 20px;
 	padding-left: 10px;
 	border: 2px rgba(37,47,57,0.8) solid;
@@ -100,7 +100,6 @@ body{
 #content div img{
 	float:left;
 	margin-right: 20px;
-	/*margin-bottom: 20px;*/
 }
 
 #content div:hover{
@@ -117,3 +116,15 @@ body{
 a:link {color:#000000;text-decoration:none;}
 a:visited {color:#55aa00;text-decoration:none;}
 a:hover {color:#0000ff;text-decoration:underline;}
+.footer{
+	width:100%;
+	height:60px;
+    line-height: 30px;
+    text-align: center;
+    font-family: Georgia,Times ;
+    font-size: 14px;
+    margin-top: 200px;
+}
+.footer a{
+	text-decoration: none;
+}

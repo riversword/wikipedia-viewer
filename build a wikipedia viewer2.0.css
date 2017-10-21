@@ -158,20 +158,22 @@ a:hover {color:#0000ff;text-decoration:underline;}
 }
 .search input[name="random"]{
 	height:32px;
+	background-color: transparent;
+  	border: 2px rgba(27,37,47,0.6) solid;
+  	color:rgba(27,37,47,0.6);
+  	font-weight:bold;
 	font-size: 16px;
 	border-radius: 5px;
 	position:absolute;
 	margin-left:-34px;
-	top:45px;
+	top:50px;
 	left:50%;
 	padding-left: 2px;
 	padding-right: 2px;
 	box-shadow: none;
-	border:none;
-	text-shadow:0 0 2px rgb(0,0,0);
 }
 .search input[name="random"]:hover{
-	background-color: rgba(27,37,47,0.6);
+	background-color: transparent;
 }
 
 .search .searchButton{

@@ -2,7 +2,7 @@
 $(document).ready(function(){
   var searchContent=$(".search input[name='searchBox']").val();
 
-  //change the style of the button when click "Go"
+  //点击 "Go"的交互样式
   $("input[name='search']").mousedown(function(){
     $(this).removeClass('searchButton');
     $(this).addClass('buttonDown');
@@ -19,7 +19,7 @@ $(document).ready(function(){
 
   $("input[name='searchBox']").bind('keypress',function(event){
     if(event.keyCode=='13'){
-        $("input[name='search']").click(); //type "center"==click "Go"
+        $("input[name='search']").click(); //敲"center"==click "Go"
     }
   });
 
@@ -34,10 +34,10 @@ $(document).ready(function(){
   	   type:"get",
   	   success:function(data){
   		            var pages=data.query.pages;
-                  //clear the content
+                  //清空当前展示内容
   		            $("#content").empty();
                   
-  		            //get every  property of pages in data
+  		            //将data中的数据展示到html
   		            for(var i in pages){
                     if(pages[i].thumbnail!=null){
                       $('#content').append("<div class='resultItem'><h3><a href='http://en.wikipedia.org/wiki?curid="+pages[i].pageid+"' target='_blank'>"+pages[i].title+"</a></h3>"+"<img src='"+pages[i].thumbnail.source+ "'>"+pages[i].extract+"</div>");
